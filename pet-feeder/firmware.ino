@@ -7,15 +7,15 @@
 
 /************************* Conexão WiFi*********************************/
 
-#define WIFI_SSID       "Carlos HZB" // nome de sua rede wifi
-#define WIFI_PASS       "fdga2173"     // senha de sua rede wifi
+#define WIFI_SSID       "YOUR WIFI SSID" // nome de sua rede wifi
+#define WIFI_PASS       "YOUR WIFI PASSWORD"     // senha de sua rede wifi
 
 /********************* Credenciais Adafruit io *************************/
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "GabriPalmyro" // Seu usuario cadastrado na plataforma da Adafruit
-#define AIO_KEY         "aio_fFrv345H19RS7AxJSIU4QRZoYePY"       // Sua key da dashboard
+#define AIO_USERNAME    "YOUR ADAFRUIT USERNAME" // Seu usuario cadastrado na plataforma da Adafruit
+#define AIO_KEY         "YOUR ADAFRUIT KEY"       // Sua key da dashboard
 
 /********************** Variaveis globais *******************************/
 
@@ -152,16 +152,6 @@ void loop() {
   if (! mqtt.ping()) {
     mqtt.disconnect();
   }
-    
-  //conectar_broker();
-  //mqtt.processPackets(5000);
-
-  // Função responsável por ler e enviar o valor do sensor a cada 1 segundos
-  //unsigned long currentMillis = millis();
-  //if (currentMillis - previousMillis > 5000 && mqtt.connected()) {
-  //previousMillis = currentMillis;
-  //scanSensorPir();
-  //}
 }
 
 /*************************** Implementação dos Prototypes ************************************/
